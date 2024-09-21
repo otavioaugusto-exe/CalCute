@@ -11,7 +11,7 @@ import SwiftUI
 struct CalCuteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			StartViewRepresentable()
         }
     }
 }

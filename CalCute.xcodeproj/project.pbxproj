@@ -3,23 +3,44 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FB4DD202C97B1EE000B168E /* CalCuteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4DD1F2C97B1EE000B168E /* CalCuteApp.swift */; };
-		7FB4DD222C97B1EE000B168E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB4DD212C97B1EE000B168E /* ContentView.swift */; };
 		7FB4DD242C97B1F0000B168E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4DD232C97B1F0000B168E /* Assets.xcassets */; };
 		7FB4DD272C97B1F0000B168E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB4DD262C97B1F0000B168E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7FB4DD1C2C97B1EE000B168E /* CalCute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalCute.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FB4DD1F2C97B1EE000B168E /* CalCuteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCuteApp.swift; sourceTree = "<group>"; };
-		7FB4DD212C97B1EE000B168E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FB4DD232C97B1F0000B168E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FB4DD262C97B1F0000B168E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7FC800492C9E759F00A8BDBC /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppCoordinator.swift,
+				CalCuteApp.swift,
+				ViewRepresentable.swift,
+			);
+			target = 7FB4DD1B2C97B1EE000B168E /* CalCute */;
+		};
+		7FC8004B2C9E75CD00A8BDBC /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CalculatorController.swift,
+				CalculatorView.swift,
+			);
+			target = 7FB4DD1B2C97B1EE000B168E /* CalCute */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7FC800462C9E758E00A8BDBC /* View */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7FC8004B2C9E75CD00A8BDBC /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = View; sourceTree = "<group>"; };
+		7FC800482C9E759900A8BDBC /* Coordinator */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7FC800492C9E759F00A8BDBC /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Coordinator; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7FB4DD192C97B1EE000B168E /* Frameworks */ = {
@@ -51,8 +72,8 @@
 		7FB4DD1E2C97B1EE000B168E /* CalCute */ = {
 			isa = PBXGroup;
 			children = (
-				7FB4DD1F2C97B1EE000B168E /* CalCuteApp.swift */,
-				7FB4DD212C97B1EE000B168E /* ContentView.swift */,
+				7FC800482C9E759900A8BDBC /* Coordinator */,
+				7FC800462C9E758E00A8BDBC /* View */,
 				7FB4DD232C97B1F0000B168E /* Assets.xcassets */,
 				7FB4DD252C97B1F0000B168E /* Preview Content */,
 			);
@@ -137,8 +158,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FB4DD222C97B1EE000B168E /* ContentView.swift in Sources */,
-				7FB4DD202C97B1EE000B168E /* CalCuteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "otavioaugusto-exe.CalCute";
+				PRODUCT_BUNDLE_IDENTIFIER = "otavioaugusto-exe.CalCutey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "otavioaugusto-exe.CalCute";
+				PRODUCT_BUNDLE_IDENTIFIER = "otavioaugusto-exe.CalCutey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
